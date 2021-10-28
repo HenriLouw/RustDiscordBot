@@ -1,0 +1,2 @@
+# RustDiscordBot
+Rust Discord Bot
