@@ -1,2 +1,2 @@
 # RustDiscordBot
-Rust Discord Bot
+Rust Discord Bot with basic commands
