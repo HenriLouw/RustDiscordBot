@@ -3,6 +3,10 @@ import requests
 import json
 from discord.ext import commands, tasks
 from itertools import cycle
+import os
+from dotenv import load_dotenv
+
+load_dotenv(find_dotenv())
 
 #Set Prefix
 bot = commands.Bot(command_prefix = '!') 
@@ -211,4 +215,4 @@ async def MONDAYS(ctx):
   
   await ctx.send(embed=embed)
 
-bot.run('ODAyODk5ODQ5NjEwOTE5OTQ2.YA18wQ.czyMvq_pPjWM_1eApu5JG6zRMZo')
+bot.run(os.getenv('BOT_TOKEN'))
